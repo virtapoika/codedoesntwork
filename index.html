@@ -6,8 +6,9 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<script type="text/javascript" src="data.json"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="index.js"></script>
   <link rel="stylesheet" href="style.css">
 
@@ -15,12 +16,14 @@
 </head>
 
 <body>
+  <div id="content">
   <h1>Hello fellow coder!</h1>
   <h3>As you might know programming isn't always easy and we want to help you with that.</h3>
   <h3>Press the button and complete the given task. Maybe it will help you with your problem.</h3>
-  <center><button onClick="">Rock the world!</button>
+  <center><button class="btn btn-success" onClick="randomize()">Rock the world!</button>
   <div id="tododiv"></div>
 </center>
+</div>
 </body>
 
 </html>
