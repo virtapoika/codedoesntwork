@@ -6,9 +6,10 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-<script type="text/javascript" src="data.json"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="data.json"></script>
   <script src="index.js"></script>
   <link rel="stylesheet" href="style.css">
 
@@ -16,14 +17,21 @@
 </head>
 
 <body>
-  <div id="content">
-  <h1>Hello fellow coder!</h1>
-  <h3>As you might know programming isn't always easy and we want to help you with that.</h3>
-  <h3>Press the button and complete the given task. Maybe it will help you with your problem.</h3>
-  <center><button class="btn btn-success" onClick="randomize()">Rock the world!</button>
-  <div id="tododiv"></div>
-</center>
+  <div data-role="page">
+    <div data-role="header">
+    <h1>Hello fellow coder!</h1>
+  </div>
+  <div data-role="main">
+    <h3>As you might know programming isn't always easy and we want to help you with that.</h3>
+    <h3>Press the button and complete the given task. Maybe it will help you with your problem.</h3>
+    <div id="tododiv"></div>
+
+  </div>
+  <div data-role="footer">
+    <button class="btn btn-success" onClick="randomize()">Rock the world!</button>
+  </div>
 </div>
+
 </body>
 
 </html>
