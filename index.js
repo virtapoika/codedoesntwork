@@ -1,10 +1,14 @@
-var used = {};
+var used = [];
 
 function randomize()
 {
   $.getJSON("data.json", function(data) {
     var random = getNewRandom(data);
-    $('#tododiv').empty().append(data[random]);
+    if (random != -1) {
+      $('#tododiv').empty().append(data[random][0]).append(data[random][1]);
+    } else {
+      //all todos have been used
+    }
   });
 
   function getNewRandom(data) {
