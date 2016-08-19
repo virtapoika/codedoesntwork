@@ -1,5 +1,10 @@
 var used = [];
 
+$( document ).ready(function() {
+   $.getJSON("data.json");
+});
+
+
 function randomize()
 {
   $.getJSON("data.json", function(data) {
